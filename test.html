@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" href="img/test.svg" type="image/x-icon">
+
+   <title>Тест на рівень англійської мови з Englishify</title>
+   <meta name="description" content="Пройти тестування за кілька хвилин та визначити свій рівень англійської. З нашим вебсайтом це зробити дуже легко. Крім того, після тестування ви можете прочитати більше про ефективні методи покращення рівня англійської у нашому блозі">
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="header">
+   <div class="header__container container">
+      <div class="header__left">
+         <a href="index.html" class="header__blog">Блог</a>
+         <a href="test.html" class="header__test">Тест</a>
+      </div>
+      <img class="header__logo" src="img/logo.jpg" alt="Englishify">
+      <div class="header__right">
+         <a href="dictionary.html" class="header__dictionary">Словник</a>
+         <div class="header__registration">
+            <button class="header__login" id="login">Увійти</button>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+<div class="popup" id="popup-login">
+   <div class="popup__content">
+      <span class="popup__close" id="close-login">&times;</span>
+      <div class="popup__in">Вхід в акаунт</div>
+      <form id="login-form">
+         <!-- <label for="email-login">Email:</label> -->
+         <input type="email" id="email-login" name="email-login" required placeholder="Введіть ваш email">
+         <!-- <label for="password-login">Пароль:</label> -->
+         <input type="password" id="password-login" name="password-login" required placeholder="Введіть ваш пароль">
+         <button type="submit">Увійти</button>
+      </form>
+   </div>
+</div>
+
+<div class="popup" id="popup-form">
+   <div class="popup__content">
+      <span class="popup__close" id="close-login">&times;</span>
+      <div class="popup__in">Пробне заняття</div>
+      <form id="login-form">
+         <input type="email" id="email-form" name="email-form" required placeholder="Введіть ваш email">
+         <input type="level" id="level" name="level" required placeholder="Введіть ваш рівень англійської">
+         <button type="submit">Надіслати</button>
+      </form>
+   </div>
+</div>
+
+
+
+      <div class="test">
+         <div class="container test__container">
+            <div class="test__body" id="test-body">
+               <div class="test__title">
+                  Хочеш вивчити англійську? Ми тобі допоможемо!
+               </div>
+               <div class="test__subtitle">
+                  Пройди короткий тест і визнач свій рівень англійської
+               </div>
+            </div>
+            <div id="message" class="message">
+               <div id="message-content"></div>
+
+            </div>
+            <div class="test__quiz quiz" id="quiz">
+               <div class="quiz__questions" id="questions"></div>
+               <div class="quiz__indicator" id="indicator">Питання 1 з 20</div>
+               <div class="quiz__results" id="results"></div>
+               <div class="quiz__controls">
+                  <button class="button__next" id="button-next" disabled>Наступне питання</button>
+                  <button class="button__form" id="button-form">Пробне заняття</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="footer">
+   <p class="footer__copyright">Contact us <br> <br> E-mail: Englishify-school@gmail.com</p>
+   <p class="footer__rights">All rights reserved</p>
+</footer>
+   </div>
+   <script src="js/script.bundle.js"></script>
+
+</body>
+
+</html>
